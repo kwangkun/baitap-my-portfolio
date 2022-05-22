@@ -1,0 +1,376 @@
+* {
+    font-size: 12px;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(39, 43, 54, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-brand i {
+    color: #35a22c;
+}
+
+.navbar-brand span {
+    font-size: 3rem;
+}
+
+.navbar-toggler {
+    background-color: #35a22c;
+}
+
+.menu .nav-item .nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #35a22c;
+    display: block;
+    transition: all 0.5s;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+.menu li.active::after {
+    width: 100%;
+}
+
+.menu .nav-item .nav-link:hover {
+    color: #35a22c;
+}
+
+/* CAROUSEL */
+.carousel-item:nth-child(1),
+.carousel-item:nth-child(2),
+.carousel-item:nth-child(3) {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url(../img/finland.jpg);
+
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(../img/mountains.jpg);
+
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(../img/mountains-1.jpg);
+}
+
+.carousel_thumb {
+    width: 150px;
+    margin: auto;
+}
+
+.carousel_thumb img {
+    border-radius: 50%;
+    width: 140px;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators li {
+    background-color: #35a22c;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 56px;
+    line-height: 65px;
+}
+
+.carousel-inner .carousel-item .carousel-caption p {
+    font-size: 24px;
+}
+
+.carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+}
+
+.carousel-indicators li.active {
+    background-color: #35a22c;
+}
+
+.carousel-indicators {
+    bottom: 10%;
+}
+
+/* PROJECT */
+#project {
+    padding: 6rem 0;
+}
+
+.container .title h2 {
+    color: #1a1d2d;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container .title p {
+    color: #585858;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 1.25rem 0;
+    padding: 0 15rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #35a22c;
+}
+
+.nav-pills a {
+    color: #1a1d2d;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #1a1d2d;
+    margin: 1rem 0.35rem;
+}
+
+.tab-pane .row .col-md-4 .card {
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    /* IMPORTANT!!! */
+    overflow: hidden;
+    box-shadow: rgb(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+
+.tab-pane .row .col-md-4 .card:hover {
+    color: #35a22c;
+    border: 1px solid #35a22c;
+    cursor: pointer;
+}
+
+.card .card-body {
+    text-align: center;
+}
+
+.nav-item a {
+    font-size: 16px;
+}
+
+.nav-item {
+    margin-bottom: 20px;
+}
+
+/* SERVICE */
+#service {
+    color: white;
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    /* IMPORTANT!!! */
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    /* IMPORTANT!!! */
+    padding: 5rem 0;
+    position: relative;
+}
+
+#service .container .service_title {
+    position: relative;
+}
+
+
+#service .overlay {
+    position: absolute;
+    background-color: rgba(7, 10, 12, 0.72);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#service .container .service_content .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+
+}
+
+
+#service .container .service_content .card:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.55s;
+}
+
+#service .container .service_content .card i {
+    color: #35a22c;
+}
+
+#service .container .service_title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+#service .container .service_title {
+    margin-bottom: 4rem;
+}
+
+#service .container .service_title p {
+    line-height: 24px;
+    font-size: 16px;
+    padding: 0 15rem;
+    margin-top: 12px;
+}
+
+#service .service_content .card p {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+#service .service_content .card h4 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    padding-top: 25px;
+}
+
+#service .card-body {
+    padding: 40px 40px;
+}
+
+/* ACHIEVEMENT */
+#achievement {
+    position: relative;
+    padding: 5rem 0;
+}
+
+#achievement .achievement_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/memphis_3.png);
+    background-position: bottom left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+#achievement .card {
+    box-shadow: rgb(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 26%);
+    padding: 3.5rem;
+}
+
+#achievement .container .row .col-md-5 .card .card-body {
+    padding: 0 0;
+}
+
+#achievement .container .row .col-md-5 .card .card-body h4 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#achievement .container .row .col-md-5 .card .card-body p {
+    font-size: 16px;
+}
+
+#achievement .container .row .col-md-7 p {
+    font-size: 16px;
+}
+
+#achievement .container .row .col-md-7 {
+    padding: 45px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+}
+
+footer .logo {
+    font-size: 16px;
+}
+
+footer .logo a:hover {
+    text-decoration: none;
+}
+
+footer .logo .fa-brands {
+    text-decoration: none;
+    color: #aaa;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    margin: 0 0.5rem;
+    font-size: 16px;
+}
+
+footer .logo .fa-brands:hover {
+    color: #35a22c;
+    border: 1px solid #35a22c;
+    transition: all 0.5s;
+}
+
+footer .copyright {
+    border-top: 1px solid #454545;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+footer .copyright p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+footer .copyright a {
+    color: #aaa;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer .copyright a:hover {
+    color: #35a22c;
+}
